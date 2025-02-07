@@ -12,15 +12,15 @@ class RoundButton extends StatelessWidget {
     return InkWell(
       onTap: (){},
       child: Container(
-        height: height * 0.1,
-        width: width * 0.8,
+        height: height * 0.08,
+        width: width * 0.7,
         decoration: BoxDecoration(
           color: Color(0xfff2a160),
           borderRadius: BorderRadius.circular(20),
           boxShadow: [
             BoxShadow(
-              color: Colors.grey.withOpacity(0.5),
-              spreadRadius: 5,
+              color: Colors.grey,
+              spreadRadius: 2,
               blurRadius: 10,
               offset: Offset(3, 3)
             )
