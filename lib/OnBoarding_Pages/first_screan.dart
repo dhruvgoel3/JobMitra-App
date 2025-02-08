@@ -26,42 +26,74 @@ class FirstScrean extends StatelessWidget {
                   padding: const EdgeInsets.only(right: 319, top: 140),
                   child: Image.asset("assets/images/saw.png"),
                 ),
+
                 Padding(
-                  padding: const EdgeInsets.only(right: 65),
-                  child: Container(
+                  padding: const EdgeInsets.only(right: 50),
+                  child: Image.asset(
+                    "assets/images/worker with boxes.png",
                     height: 380,
                     width: 161,
-                    decoration: BoxDecoration(),
-                    child: Image.asset("assets/images/worker with boxes.png"),
                   ),
                 ),
-                Container(
-                  height: 113,
-                  width: 160,
-                  decoration: BoxDecoration(color: Colors.white),
-                ),
-                Row(
-                  children: [
-                    Column(
-                      children: [
-                        Text(
-                          "Connecting workers to",
-                          style: TextStyle(
-                              fontSize: 16,
-                              fontWeight: FontWeight.w600,
-                              color: Colors.black),
+                // Padding(
+                //   padding: const EdgeInsets.only(),
+                //   child: Container(
+                //     height: 113,
+                //     width: 160,
+                //     decoration: BoxDecoration(color: Colors.white),
+                //   ),
+                // ),
+                Padding(
+                  padding: const EdgeInsets.only(bottom: 28.0),
+                  child: Row(
+                    children: [
+                      Padding(
+                        padding: const EdgeInsets.symmetric(
+                          horizontal: 38.0,
                         ),
-                        Text("Jobs Seamlessly",style: TextStyle(
-                            fontSize: 16,
-                            fontWeight: FontWeight.w600,
-                            color: Colors.black),)
-                      ],
-                    )
-                  ],
-                )
+                        child: Column(
+                          mainAxisAlignment: MainAxisAlignment.start,
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Text(
+                              "Connecting workers to",
+                              style: TextStyle(
+                                  fontSize: 16,
+                                  fontWeight: FontWeight.w600,
+                                  color: Colors.black),
+                            ),
+                            Text(
+                              "Jobs Seamlessly",
+                              style: TextStyle(
+                                  fontSize: 16,
+                                  fontWeight: FontWeight.w600,
+                                  color: Colors.black),
+                            ),
+                          ],
+                        ),
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.only(right: 28.0),
+                        child: Image.asset(
+                            "assets/images/Builder's tools and hard hat.png"),
+                      )
+                      // Padding(
+                      //   padding: const EdgeInsets.only(bottom: 100.0),
+                      //   child: Container(
+                      //     height: 121,
+                      //     width: 97,
+                      //     child: Image.asset(
+                      //         "assets/images/Builder's tools and hard hat.png",),
+                      //
+                      //   ),
+                      // ),
+                    ],
+                  ),
+                ),
               ],
             ),
           ),
+          RoundButton(title: "Get Statrted", onTap: (){})
         ],
       ),
     );
