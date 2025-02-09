@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:get/get_navigation/src/root/get_material_app.dart';
-import 'package:laborlane/OnBoarding_Pages/first_new_screan.dart';
 import 'package:laborlane/OnBoarding_Pages/first_screan.dart';
 
 void main() {
@@ -15,7 +14,7 @@ class MyApp extends StatelessWidget {
 
       ),
       debugShowCheckedModeBanner: false,
-      home: FirstNewScrean(),
+      home: FirstScrean(),
     );
   }
 }
