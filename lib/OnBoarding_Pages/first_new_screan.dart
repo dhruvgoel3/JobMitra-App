@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:get/get_core/src/get_main.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:laborlane/OnBoarding_Pages/second_screan.dart';
 import 'package:laborlane/Widgets/round_button.dart';
 
 class FirstNewScrean extends StatelessWidget {
@@ -86,8 +89,10 @@ class FirstNewScrean extends StatelessWidget {
               height: 20,
             ),
             Image.asset("assets/images/Page Control.png"),
-            SizedBox(height: 7),
-            RoundButton(title: "GET STARTED", onTap: () {}),
+            SizedBox(height: 5),
+            RoundButton(title: "GET STARTED", onTap: () {
+              Get.to(()=>SecondScrean());
+            }),
           ],
         ),
       ),
