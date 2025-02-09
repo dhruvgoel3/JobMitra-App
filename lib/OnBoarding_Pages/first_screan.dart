@@ -27,10 +27,12 @@ class FirstScrean extends StatelessWidget {
             Padding(
               padding: const EdgeInsets.only(right: 319, top: 140),
               child: Container(
-                height: 70,
+                  height: 70,
                   width: 70,
-
-                  child: Image.asset("assets/images/saw.png",fit: BoxFit.cover,)),
+                  child: Image.asset(
+                    "assets/images/saw.png",
+                    fit: BoxFit.cover,
+                  )),
             ),
 
             Padding(
@@ -38,9 +40,9 @@ class FirstScrean extends StatelessWidget {
               child: Container(
                 height: height * 0.38,
                 width: width * 0.43,
-
                 child: Image.asset(
-                  "assets/images/worker with boxes.png",height: 100,
+                  "assets/images/worker with boxes.png",
+                  height: 100,
                 ),
               ),
             ),
@@ -53,58 +55,58 @@ class FirstScrean extends StatelessWidget {
                   size: 40,
                 )),
 
-            // Padding(
-            //   padding: const EdgeInsets.only(),
-            //   child: Container(
-            //     height: 113,
-            //     width: 160,
-            //     decoration: BoxDecoration(color: Colors.white),
-            //   ),
-            // ),
-            // Padding(
-            //   padding: const EdgeInsets.only(bottom: 28.0),
-            //   child: Row(
-            //     children: [
-            //       Padding(
-            //         padding: const EdgeInsets.symmetric(
-            //           horizontal: 38.0,
-            //         ),
-            //         child: Column(
-            //           mainAxisAlignment: MainAxisAlignment.start,
-            //           crossAxisAlignment: CrossAxisAlignment.start,
-            //           children: [
-            //             Text("Connecting workers to",
-            //                 style: GoogleFonts.poppins(
-            //                   color: Colors.black,
-            //                   fontWeight: FontWeight.w600,
-            //                   fontSize: 16,
-            //                 )),
-            //             Text("Jobs Seamlessly",
-            //                 style: GoogleFonts.poppins(
-            //                     color: Colors.black,
-            //                     fontWeight: FontWeight.w600,
-            //                     fontSize: 16)),
-            //           ],
-            //         ),
-            //       ),
-            //       Padding(
-            //         padding: const EdgeInsets.only(right: 28.0),
-            //         child: Image.asset(
-            //             "assets/images/Builder's tools and hard hat.png"),
-            //       )
-            //       // Padding(
-            //       //   padding: const EdgeInsets.only(bottom: 100.0),
-            //       //   child: Container(
-            //       //     height: 121,
-            //       //     width: 97,
-            //       //     child: Image.asset(
-            //       //         "assets/images/Builder's tools and hard hat.png",),
-            //       //
-            //       //   ),
-            //       // ),
-            //     ],
-            //   ),
-            // ),
+            Padding(
+              padding: const EdgeInsets.only(),
+              child: Container(
+                height: 113,
+                width: 160,
+                decoration: BoxDecoration(color: Colors.white),
+              ),
+            ),
+            Padding(
+              padding: const EdgeInsets.only(bottom: 28.0),
+              child: Row(
+                children: [
+                  Padding(
+                    padding: const EdgeInsets.symmetric(
+                      horizontal: 38.0,
+                    ),
+                    child: Column(
+                      mainAxisAlignment: MainAxisAlignment.start,
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text("Connecting workers to",
+                            style: GoogleFonts.poppins(
+                              color: Colors.black,
+                              fontWeight: FontWeight.w600,
+                              fontSize: 16,
+                            )),
+                        Text("Jobs Seamlessly",
+                            style: GoogleFonts.poppins(
+                                color: Colors.black,
+                                fontWeight: FontWeight.w600,
+                                fontSize: 16)),
+                      ],
+                    ),
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.only(right: 28.0),
+                    child: Image.asset(
+                        "assets/images/Builder's tools and hard hat.png"),
+                  )
+                  // Padding(
+                  //   padding: const EdgeInsets.only(bottom: 100.0),
+                  //   child: Container(
+                  //     height: 121,
+                  //     width: 97,
+                  //     child: Image.asset(
+                  //         "assets/images/Builder's tools and hard hat.png",),
+                  //
+                  //   ),
+                  // ),
+                ],
+              ),
+            ),
 
             // RoundButton(title: "Get Statrted", onTap: () {})
           ],
