@@ -11,7 +11,7 @@ class RoundButton extends StatelessWidget {
     var height = MediaQuery.of(context).size.height;
     var width = MediaQuery.of(context).size.width;
     return InkWell(
-      onTap: (){},
+      onTap: onTap,
       child: Container(
         height: height * 0.05,
         width: width * 0.88,
