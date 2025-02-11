@@ -20,10 +20,28 @@ class SecondScrean extends StatelessWidget {
               colors: [Color(0xfff7cda5), Color(0xfffaecd4)])),
       child: Column(
         children: [
-          Image.asset("assets/images/Working with a chainsaw.png",height: 289,width: 292,),
           Padding(
-            padding: const EdgeInsets.only(right: 155.0,top: 20),
-            child: Image.asset("assets/images/Group 1.png",height: 112,width: 158,),
+            padding: const EdgeInsets.only(left: 20),
+            child: Column(
+              children: [
+                Padding(
+                  padding: const EdgeInsets.symmetric(horizontal: 100,vertical:50),
+                  child: Container(
+                      color: Colors.black,
+                      child: Image.asset(
+                        "assets/images/tools-removebg-preview.png",
+                      )),
+                ),
+                Padding(
+                  padding: const EdgeInsets.only(right: 155.0, top: 20),
+                  child: Image.asset(
+                    "assets/images/Working_with_a_chainsaw__1_-removebg-preview.png",
+                    height: 112,
+                    width: 158,
+                  ),
+                ),
+              ],
+            ),
           ),
           Row(
             children: [
@@ -54,11 +72,11 @@ class SecondScrean extends StatelessWidget {
                 child: Image.asset(
                     "assets/images/Builder's tools and hard hat.png"),
               ),
-
-
             ],
           ),
-          SizedBox(height: 30,),
+          SizedBox(
+            height: 30,
+          ),
           Image.asset("assets/images/Page Control.png"),
           RoundButton(title: "GET STARTED", onTap: () {})
         ],
