@@ -26,7 +26,7 @@ class FirstScrean extends StatelessWidget {
             Row(
               children: [
                 Padding(
-                  padding: EdgeInsets.only(bottom: height * 0.1),
+                  padding: EdgeInsets.only(bottom: height * 0.19),
                   child: Container(
                     child: Image.asset(
                       "assets/images/saw.png",
@@ -35,7 +35,7 @@ class FirstScrean extends StatelessWidget {
                   ),
                 ),
                 Padding(
-                  padding: EdgeInsets.only(top: height * 0.18, left: 10),
+                  padding: EdgeInsets.only(top: height * 0.10, left: 10),
                   child: Container(
                     child: Image.asset(
                       "assets/images/worker with boxes.png",
@@ -49,6 +49,7 @@ class FirstScrean extends StatelessWidget {
                   padding:
                       EdgeInsets.only(left: width * 0.26, top: height * 0.5),
                   child: Container(
+                    color: Colors.black,
                     child: Image.asset(
                       "assets/images/wrench.png",
                     ),
@@ -56,7 +57,6 @@ class FirstScrean extends StatelessWidget {
                 )
               ],
             ),
-
             Padding(
               padding: EdgeInsets.symmetric(
                 horizontal: width * 0.12,
@@ -67,9 +67,11 @@ class FirstScrean extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.start,
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      Image.asset(
-                        "assets/images/Group 12.png",
-                        fit: BoxFit.cover,
+                      Container(
+                        child: Image.asset(
+                          "assets/images/Group 12.png",
+                          fit: BoxFit.cover,
+                        ),
                       ),
                       Text("Connecting workers to",
                           style: GoogleFonts.poppins(
@@ -88,12 +90,13 @@ class FirstScrean extends StatelessWidget {
                     width: 15,
                   ),
                   Padding(
-                    padding:  EdgeInsets.only(top: height*0.099),
+                    padding: EdgeInsets.only(top: height * 0.099),
                     child: Container(
-
                       height: 100,
                       child: Image.asset(
-                          "assets/images/Builder's tools and hard hat.png",fit: BoxFit.cover,),
+                        "assets/images/Builder's tools and hard hat.png",
+                        fit: BoxFit.cover,
+                      ),
                     ),
                   )
                 ],
