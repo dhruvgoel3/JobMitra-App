@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get_navigation/src/root/get_material_app.dart';
-import 'package:laborlane/OnBoarding_Pages/first_screan.dart';
+
+import 'Frontend/OnBoarding_Pages/first_screan.dart';
 
 void main() {
   runApp(MyApp());

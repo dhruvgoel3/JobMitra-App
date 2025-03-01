@@ -2,8 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:get/get_core/src/get_main.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:laborlane/OnBoarding_Pages/second_screan.dart';
-import 'package:laborlane/Widgets/round_button.dart';
+import 'package:laborlane/Frontend/OnBoarding_Pages/second_screan.dart';
+
+import '../Widgets/round_button.dart';
 
 class FirstScrean extends StatelessWidget {
   FirstScrean({super.key});

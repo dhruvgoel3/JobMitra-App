@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:laborlane/Widgets/round_button.dart';
+import '../Widgets/round_button.dart';
 
 class SecondScrean extends StatelessWidget {
   SecondScrean({super.key});
