@@ -24,55 +24,66 @@ class SecondScrean extends StatelessWidget {
             padding: const EdgeInsets.only(left: 20),
             child: Column(
               children: [
-                Padding(
-                  padding: const EdgeInsets.symmetric(horizontal: 100,vertical:50),
-                  child: Container(
-                      color: Colors.black,
-                      child: Image.asset(
-                        "assets/images/tools-removebg-preview.png",
-                      )),
-                ),
-                Padding(
-                  padding: const EdgeInsets.only(right: 155.0, top: 20),
+                Container(
+                    child: Padding(
+                  padding:
+                      EdgeInsets.only(left: width * 0.8, top: width * 0.45),
                   child: Image.asset(
-                    "assets/images/Working_with_a_chainsaw__1_-removebg-preview.png",
-                    height: 112,
-                    width: 158,
+                    "assets/images/tools-removebg-preview.png",
                   ),
+                )),
+                Image.asset(
+                  "assets/images/Working_with_a_chainsaw__1_-removebg-preview.png",
                 ),
               ],
             ),
           ),
-          Row(
-            children: [
-              Padding(
-                padding: const EdgeInsets.symmetric(
-                  horizontal: 30.0,
-                ),
-                child: Column(
-                  mainAxisAlignment: MainAxisAlignment.start,
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Text("Your perfect workers",
-                        style: GoogleFonts.poppins(
-                          color: Colors.black,
-                          fontWeight: FontWeight.w600,
-                          fontSize: 16,
-                        )),
-                    Text("Jobs Seamlessly",
-                        style: GoogleFonts.poppins(
+          Padding(
+            padding: EdgeInsets.only(left: width * 0.12),
+            child: Row(
+              children: [
+                Padding(
+                  padding: const EdgeInsets.only(bottom: 20.0),
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.start,
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Padding(
+                        padding: EdgeInsets.only(bottom: height * 0.015),
+                        child: Image.asset(
+                          "assets/images/Group 12.png",
+                          fit: BoxFit.cover,
+                        ),
+                      ),
+                      Text("Connecting workers to",
+                          style: GoogleFonts.poppins(
                             color: Colors.black,
                             fontWeight: FontWeight.w600,
-                            fontSize: 16)),
-                  ],
+                            fontSize: 16,
+                          )),
+                      Text("Jobs Seamlessly",
+                          style: GoogleFonts.poppins(
+                              color: Colors.black,
+                              fontWeight: FontWeight.w600,
+                              fontSize: 16)),
+                    ],
+                  ),
                 ),
-              ),
-              Padding(
-                padding: const EdgeInsets.only(right: 28.0),
-                child: Image.asset(
-                    "assets/images/Builder's tools and hard hat.png"),
-              ),
-            ],
+                SizedBox(
+                  width: 15,
+                ),
+                Padding(
+                  padding: EdgeInsets.only(top: height * 0.099),
+                  child: Container(
+                    height: 100,
+                    child: Image.asset(
+                      "assets/images/Builder's tools and hard hat.png",
+                      fit: BoxFit.cover,
+                    ),
+                  ),
+                )
+              ],
+            ),
           ),
           SizedBox(
             height: 30,

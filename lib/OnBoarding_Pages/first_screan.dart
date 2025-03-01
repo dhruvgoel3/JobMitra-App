@@ -26,7 +26,7 @@ class FirstScrean extends StatelessWidget {
             Row(
               children: [
                 Padding(
-                  padding: EdgeInsets.only(bottom: height * 0.19),
+                  padding: EdgeInsets.only(bottom: height * 0.2),
                   child: Container(
                     child: Image.asset(
                       "assets/images/saw.png",
@@ -35,7 +35,7 @@ class FirstScrean extends StatelessWidget {
                   ),
                 ),
                 Padding(
-                  padding: EdgeInsets.only(top: height * 0.10, left: 20),
+                  padding: EdgeInsets.only(top: height * 0.28, left: 20),
                   child: Container(
                     child: Image.asset(
                       "assets/images/worker with boxes.png",
@@ -47,7 +47,7 @@ class FirstScrean extends StatelessWidget {
                 ),
                 Padding(
                   padding:
-                      EdgeInsets.only(left: width * 0.234, top: height * 0.5),
+                      EdgeInsets.only(left: width * 0.234, top: height * 0.38),
                   child: Container(
                     child: Image.asset(
                       "assets/images/wrench.png",
@@ -57,9 +57,7 @@ class FirstScrean extends StatelessWidget {
               ],
             ),
             Padding(
-              padding: EdgeInsets.symmetric(
-                horizontal: width * 0.12,
-              ),
+              padding: EdgeInsets.only(left: width * 0.12),
               child: Row(
                 children: [
                   Padding(
@@ -109,7 +107,7 @@ class FirstScrean extends StatelessWidget {
               height: 0,
             ),
             Image.asset("assets/images/Page Control.png"),
-            SizedBox(height: 0),
+            SizedBox(height: 5),
             RoundButton(
                 title: "GET STARTED",
                 onTap: () {
