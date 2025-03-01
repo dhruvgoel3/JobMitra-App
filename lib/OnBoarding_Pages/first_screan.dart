@@ -35,7 +35,7 @@ class FirstScrean extends StatelessWidget {
                   ),
                 ),
                 Padding(
-                  padding: EdgeInsets.only(top: height * 0.10, left: 10),
+                  padding: EdgeInsets.only(top: height * 0.10, left: 20),
                   child: Container(
                     child: Image.asset(
                       "assets/images/worker with boxes.png",
@@ -47,9 +47,8 @@ class FirstScrean extends StatelessWidget {
                 ),
                 Padding(
                   padding:
-                      EdgeInsets.only(left: width * 0.26, top: height * 0.5),
+                      EdgeInsets.only(left: width * 0.234, top: height * 0.5),
                   child: Container(
-                    color: Colors.black,
                     child: Image.asset(
                       "assets/images/wrench.png",
                     ),
@@ -63,28 +62,32 @@ class FirstScrean extends StatelessWidget {
               ),
               child: Row(
                 children: [
-                  Column(
-                    mainAxisAlignment: MainAxisAlignment.start,
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Container(
-                        child: Image.asset(
-                          "assets/images/Group 12.png",
-                          fit: BoxFit.cover,
+                  Padding(
+                    padding: const EdgeInsets.only(bottom: 20.0),
+                    child: Column(
+                      mainAxisAlignment: MainAxisAlignment.start,
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Padding(
+                          padding: EdgeInsets.only(bottom: height * 0.015),
+                          child: Image.asset(
+                            "assets/images/Group 12.png",
+                            fit: BoxFit.cover,
+                          ),
                         ),
-                      ),
-                      Text("Connecting workers to",
-                          style: GoogleFonts.poppins(
-                            color: Colors.black,
-                            fontWeight: FontWeight.w600,
-                            fontSize: 16,
-                          )),
-                      Text("Jobs Seamlessly",
-                          style: GoogleFonts.poppins(
+                        Text("Connecting workers to",
+                            style: GoogleFonts.poppins(
                               color: Colors.black,
                               fontWeight: FontWeight.w600,
-                              fontSize: 16)),
-                    ],
+                              fontSize: 16,
+                            )),
+                        Text("Jobs Seamlessly",
+                            style: GoogleFonts.poppins(
+                                color: Colors.black,
+                                fontWeight: FontWeight.w600,
+                                fontSize: 16)),
+                      ],
+                    ),
                   ),
                   SizedBox(
                     width: 15,
@@ -107,19 +110,14 @@ class FirstScrean extends StatelessWidget {
             ),
             Image.asset("assets/images/Page Control.png"),
             SizedBox(height: 0),
-            Padding(
-              padding: const EdgeInsets.only(bottom: 10.0),
-              child: RoundButton(
-                  title: "GET STARTED",
-                  onTap: () {
-                    Get.to(() => SecondScrean());
-                  }),
-            ),
+            RoundButton(
+                title: "GET STARTED",
+                onTap: () {
+                  Get.to(() => SecondScrean());
+                }),
           ],
         ),
       ),
     );
   }
 }
-// done
-// nicee
