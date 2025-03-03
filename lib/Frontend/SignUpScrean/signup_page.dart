@@ -58,7 +58,7 @@ class _SignupPageState extends State<SignupPage> {
                   "assets/images/worker_with_ladder-removebg-preview.png"),
             ),
             Padding(
-              padding: EdgeInsets.only(left: width * 0.05, top: height * 0.4),
+              padding: EdgeInsets.only(left: width * 0.06, top: height * 0.4),
               child: Column(
                 children: [
                   CustomWidgets.CustomTextfield(
@@ -126,9 +126,32 @@ class _SignupPageState extends State<SignupPage> {
               ),
             ),
             Padding(
-              padding:  EdgeInsets.only(top: height*0.83,left: 15),
+              padding: EdgeInsets.only(top: height * 0.83, left: 23),
               child: Row(
                 children: [CustomWidgets.CustomSignUpGoogleButtpn()],
+              ),
+            ),
+            Padding(
+              padding: EdgeInsets.only(top: height * 0.91, left: width * 0.18),
+              child: Row(
+                children: [
+                  Text(
+                    "Don't have an account?",
+                    style: GoogleFonts.poppins(
+                        fontSize: 15,
+                        fontWeight: FontWeight.w400,
+                        color: Colors.black),
+                  ),
+                  TextButton(
+                      onPressed: () {},
+                      child: Text(
+                        "Login",
+                        style: GoogleFonts.poppins(
+                            fontSize: 15,
+                            fontWeight: FontWeight.w400,
+                            color: Color(0xfff2a160)),
+                      ))
+                ],
               ),
             )
           ],

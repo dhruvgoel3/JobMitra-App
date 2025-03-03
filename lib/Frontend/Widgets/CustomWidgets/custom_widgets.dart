@@ -9,7 +9,7 @@ class CustomWidgets {
       required controller}) {
     return Container(
       height: 43,
-      width: 340,
+      width: 335,
       decoration: BoxDecoration(
           // gradient: LinearGradient(
           //     begin: Alignment.topCenter,
@@ -52,7 +52,11 @@ class CustomWidgets {
     return Container(
       child: Row(
         children: [
-          Image.asset("assets/images/Google.png"),
+          Padding(
+            padding: EdgeInsets.only(left: 40),
+            child: Image.asset("assets/images/Google.png"),
+          ),
+          SizedBox(width: 15),
           Text(
             "Continue with Google",
             style: GoogleFonts.poppins(
@@ -60,10 +64,10 @@ class CustomWidgets {
           )
         ],
       ),
-      height: 48,
-      width: 350,
+      height: 40,
+      width: 330,
       decoration: BoxDecoration(
-        border: Border.all(color: Colors.black,width: 1),
+        border: Border.all(color: Colors.black, width: 1),
         borderRadius: BorderRadius.circular(40),
       ),
     );
