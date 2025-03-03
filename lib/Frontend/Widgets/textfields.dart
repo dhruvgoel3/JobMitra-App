@@ -1,46 +1,93 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-class Textfields extends StatelessWidget {
-  final TextEditingController controller;
-  final bool tohide;
-  final String text;
-  final Icon icon;
+class Textfields extends StatefulWidget {
+  const Textfields({super.key});
 
-  const Textfields(
-      {super.key,
-      required this.controller,
-      required this.icon,
-      required this.text,
-      required this.tohide});
+  @override
+  State<Textfields> createState() => _TextfieldsState();
+}
 
+class _TextfieldsState extends State<Textfields> {
   @override
   Widget build(BuildContext context) {
     var height = MediaQuery.of(context).size.height;
     var width = MediaQuery.of(context).size.width;
-    return Container(
-      height: 200,
-      width: 50,
-      decoration: BoxDecoration(
-          color: Color(0xfffae9d0), borderRadius: BorderRadius.circular(7)),
-      child: Row(
+    return Scaffold(
+      body: Column(
         children: [
-          TextField(
-              controller: controller,
-              obscureText: tohide,
+          SizedBox(
+            height: 50,
+          ),
+          Container(
+            height: height * 0.054,
+            width: width * 0.85,
+            decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(10),
+                color: Color(0xfffae9d0),
+                boxShadow: [
+                  BoxShadow(
+                      color: Colors.black.withOpacity(0.2),
+                      offset: Offset(0, -5),
+                      blurRadius: 4)
+                ]),
+            child: TextField(
+              cursorColor: Colors.black,
+              cursorHeight: 18,
+              cursorErrorColor: Colors.red,
+              keyboardType: TextInputType.emailAddress,
               decoration: InputDecoration(
-                icon: icon,
-                iconColor: Colors.black,
-                hintText: text,
-                hintStyle: GoogleFonts.poppins(
-                  fontWeight: FontWeight.w400,
-                  color: Colors.black,
-                  fontSize: 15,
-                ),
-              )),
+                  hintText: "Username",
+                  focusedBorder: InputBorder.none,
+                  border: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(10)),
+                  hintStyle: GoogleFonts.poppins(
+                      fontSize: 15,
+                      fontWeight: FontWeight.w400,
+                      color: Colors.black),
+                  prefixIcon: Icon(
+                    Icons.person,
+                    size: 25,
+                    color: Colors.black,
+                  )),
+            ),
+          ),
+          SizedBox(height: 15),
+          Container(
+            height: height * 0.054,
+            width: width * 0.85,
+            decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(10),
+                color: Color(0xfffae9d0),
+                boxShadow: [
+                  BoxShadow(
+                      color: Colors.black.withOpacity(0.2),
+                      offset: Offset(0, -5),
+                      blurRadius: 4)
+                ]),
+            child: TextField(
+              cursorColor: Colors.black,
+              cursorHeight: 18,
+              cursorErrorColor: Colors.red,
+              keyboardType: TextInputType.emailAddress,
+              decoration: InputDecoration(
+                  hintText: "Email",
+                  focusedBorder: InputBorder.none,
+                  border: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(10)),
+                  hintStyle: GoogleFonts.poppins(
+                      fontSize: 15,
+                      fontWeight: FontWeight.w400,
+                      color: Colors.black),
+                  prefixIcon: Icon(
+                    Icons.email_outlined,
+                    size: 25,
+                    color: Colors.black,
+                  )),
+            ),
+          ),
         ],
       ),
     );
   }
 }
-// Here is the custom textfield
