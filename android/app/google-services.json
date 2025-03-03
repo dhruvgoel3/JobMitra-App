@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "332370573395",
+    "project_id": "jobmitra-309cb",
+    "storage_bucket": "jobmitra-309cb.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:332370573395:android:d8e86f4a74ef6539de2ea6",
+        "android_client_info": {
+          "package_name": "com.example.laborlane"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDy-U68urhePIoyXZCw2dUHYwsdn1R5Xz4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
