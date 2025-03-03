@@ -4,6 +4,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:get/get_core/src/get_main.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:laborlane/Frontend/LoginScrean/login_screan.dart';
 import 'package:laborlane/Frontend/Widgets/CustomWidgets/custom_widgets.dart';
 import 'package:laborlane/Frontend/Widgets/round_button.dart';
@@ -35,19 +36,36 @@ class _SignupPageState extends State<SignupPage> {
         child: Stack(
           children: [
             Padding(
+              padding: EdgeInsets.only(left: width * 0.46, top: height * 0.27),
+              child: Column(
+                children: [
+                  Text(
+                    "Sign Up",
+                    style: GoogleFonts.inter(
+                        fontWeight: FontWeight.w700, fontSize: 35),
+                  ),
+                  Text(
+                    "Create your Account",
+                    style: GoogleFonts.poppins(
+                        fontWeight: FontWeight.w400, fontSize: 13),
+                  ),
+                ],
+              ),
+            ),
+            Padding(
               padding: EdgeInsets.only(left: width * 0.05, top: height * 0.13),
               child: Image.asset(
                   "assets/images/worker_with_ladder-removebg-preview.png"),
             ),
             Padding(
-              padding: EdgeInsets.only(left: width * 0.04, top: height * 0.4),
+              padding: EdgeInsets.only(left: width * 0.05, top: height * 0.4),
               child: Column(
                 children: [
                   CustomWidgets.CustomTextfield(
                       label: "Username",
                       text: "Username",
                       icon: Icons.perm_identity,
-                      controller: nameController),
+                      controller: null),
                   SizedBox(
                     height: 15,
                   ),
@@ -97,6 +115,20 @@ class _SignupPageState extends State<SignupPage> {
                     });
                   } // Corrected navigation
                 },
+              ),
+            ),
+            Padding(
+              padding: EdgeInsets.only(top: height * 0.78, left: width * 0.45),
+              child: Text(
+                "Or",
+                style: GoogleFonts.inter(
+                    fontWeight: FontWeight.w500, fontSize: 20),
+              ),
+            ),
+            Padding(
+              padding:  EdgeInsets.only(top: height*0.83,left: 15),
+              child: Row(
+                children: [CustomWidgets.CustomSignUpGoogleButtpn()],
               ),
             )
           ],

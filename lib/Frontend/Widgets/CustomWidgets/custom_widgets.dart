@@ -9,7 +9,7 @@ class CustomWidgets {
       required controller}) {
     return Container(
       height: 43,
-      width: 350,
+      width: 340,
       decoration: BoxDecoration(
           // gradient: LinearGradient(
           //     begin: Alignment.topCenter,
@@ -44,6 +44,27 @@ class CustomWidgets {
           }
           return null;
         },
+      ),
+    );
+  }
+
+  static CustomSignUpGoogleButtpn() {
+    return Container(
+      child: Row(
+        children: [
+          Image.asset("assets/images/Google.png"),
+          Text(
+            "Continue with Google",
+            style: GoogleFonts.poppins(
+                fontSize: 18, fontWeight: FontWeight.w400, color: Colors.black),
+          )
+        ],
+      ),
+      height: 48,
+      width: 350,
+      decoration: BoxDecoration(
+        border: Border.all(color: Colors.black,width: 1),
+        borderRadius: BorderRadius.circular(40),
       ),
     );
   }

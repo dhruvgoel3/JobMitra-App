@@ -2,7 +2,7 @@ import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get_navigation/src/root/get_material_app.dart';
 
-import 'Frontend/OnBoarding_Pages/first_screan.dart';
+import 'Frontend/OnBoarding/first_screan.dart';
 import 'firebase_options.dart';
 
 void main() async {

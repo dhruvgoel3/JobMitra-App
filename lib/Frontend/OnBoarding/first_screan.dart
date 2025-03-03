@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:get/get_core/src/get_main.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:laborlane/Frontend/OnBoarding_Pages/second_screan.dart';
+import 'package:laborlane/Frontend/OnBoarding/second_screan.dart';
 
 import '../Widgets/round_button.dart';
 
