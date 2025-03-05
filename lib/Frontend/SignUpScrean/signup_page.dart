@@ -6,6 +6,7 @@ import 'package:get/get.dart';
 import 'package:get/get_core/src/get_main.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:laborlane/Frontend/LoginScrean/login_screan.dart';
+import 'package:laborlane/Frontend/MainAppUi/HomePage/home_page.dart';
 import 'package:laborlane/Frontend/Widgets/CustomWidgets/custom_widgets.dart';
 import 'package:laborlane/Frontend/Widgets/round_button.dart';
 import 'package:laborlane/Frontend/Widgets/textfields.dart';
@@ -20,13 +21,13 @@ class SignupPage extends StatefulWidget {
 }
 
 class _SignupPageState extends State<SignupPage> {
+  bool loading = false;
   final _formKey = GlobalKey<FormState>();
   final nameController = TextEditingController();
   final emailController = TextEditingController();
   final passwordController = TextEditingController();
   final confirmpasswordController = TextEditingController();
 
-  FirebaseAuth _auth = FirebaseAuth.instance;
   @override
   Widget build(BuildContext context) {
     var height = MediaQuery.of(context).size.height;
@@ -100,20 +101,33 @@ class _SignupPageState extends State<SignupPage> {
               padding: EdgeInsets.only(top: height * 0.7, left: width * 0.055),
               child: RoundButton(
                 title: "Sign Up",
-                onTap: () {
+                onTap: () async {
                   if (_formKey.currentState!.validate()) {
-                    AuthService()
-                        .AccountwithEmail(
-                            emailController.text, passwordController.text)
-                        .then((value) {
-                      if (value == 'Account Created') {
-                        Get.snackbar('', 'Account Created');
-                        Get.to(() => LoginScrean());
-                      } else {
-                        Get.snackbar("Error", value);
-                      }
+                    if (passwordController.text != confirmpasswordController.text) {
+                      Get.snackbar("Error", "Passwords do not match");
+                      return;
+                    }
+
+                    setState(() {
+                      loading = true;
                     });
-                  } // Corrected navigation
+
+                    String response = await AuthService.AccountwithEmail(
+                        emailController.text, passwordController.text);
+
+                    setState(() {
+                      loading = false;
+                    });
+
+                    if (response == "Account Created") {
+                      Get.snackbar("Success", "Account Created");
+                      Get.to(() => HomePage());
+                    } else {
+                      Get.snackbar("Error", response);
+                    }
+                  } else {
+                    Get.snackbar("Error", "Please fill all fields correctly");
+                  }
                 },
               ),
             ),
@@ -153,7 +167,7 @@ class _SignupPageState extends State<SignupPage> {
                       ))
                 ],
               ),
-            )
+            ),
           ],
         ),
       ),
