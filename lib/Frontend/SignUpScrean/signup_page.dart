@@ -103,7 +103,8 @@ class _SignupPageState extends State<SignupPage> {
                 title: "Sign Up",
                 onTap: () async {
                   if (_formKey.currentState!.validate()) {
-                    if (passwordController.text != confirmpasswordController.text) {
+                    if (passwordController.text !=
+                        confirmpasswordController.text) {
                       Get.snackbar("Error", "Passwords do not match");
                       return;
                     }
@@ -142,7 +143,7 @@ class _SignupPageState extends State<SignupPage> {
             Padding(
               padding: EdgeInsets.only(top: height * 0.83, left: 23),
               child: Row(
-                children: [CustomWidgets.CustomSignUpGoogleButtpn()],
+                children: [CustomWidgets.CustomSignUpGoogleButton()],
               ),
             ),
             Padding(

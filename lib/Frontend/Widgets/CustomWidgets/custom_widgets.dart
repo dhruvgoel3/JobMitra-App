@@ -48,15 +48,15 @@ class CustomWidgets {
     );
   }
 
-  static CustomSignUpGoogleButtpn() {
+  static CustomSignUpGoogleButton() {
     return Container(
       child: Row(
         children: [
           Padding(
-            padding: EdgeInsets.only(left: 40),
-            child: Image.asset("assets/images/Google.png"),
+            padding: EdgeInsets.only(left: 0),
+            child: Image.asset(""),
           ),
-          SizedBox(width: 15),
+          SizedBox(width: 0),
           Text(
             "Continue with Google",
             style: GoogleFonts.poppins(
