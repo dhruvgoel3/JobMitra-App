@@ -52,10 +52,6 @@ class CustomWidgets {
     return Container(
       child: Row(
         children: [
-          Padding(
-            padding: EdgeInsets.only(left: 0),
-            child: Image.asset(""),
-          ),
           SizedBox(width: 0),
           Text(
             "Continue with Google",

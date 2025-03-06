@@ -158,7 +158,9 @@ class _SignupPageState extends State<SignupPage> {
                         color: Colors.black),
                   ),
                   TextButton(
-                      onPressed: () {},
+                      onPressed: () {
+                        Get.to(() => LoginScrean());
+                      },
                       child: Text(
                         "Login",
                         style: GoogleFonts.poppins(
