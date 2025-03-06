@@ -38,7 +38,7 @@ class _HomePageState extends State<HomePage> {
       ),
       body: Column(
         children: [
-          CustomCards.CustomHomeCards(JobTitle: "Plumber", Name: "Ramesh", Location: "Mullana", Salary: "(\$12)", Image: "", WorkDuration: "Mon-Sat", rating: "4.5"),
+          CustomCards.CustomHomeCards(JobTitle: "Plumber", Name: "Ramesh", Location: "Mullana", Salary: "(\$12)", Image: "", WorkDuration: "Mon-Sat", rating: "4.5", Experience: "(2 yrs"),
         ],
       ),
     );
