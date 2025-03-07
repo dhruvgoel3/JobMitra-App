@@ -36,10 +36,25 @@ class _HomePageState extends State<HomePage> {
           )
         ],
       ),
-      body: Column(
-        children: [
-          CustomCards.CustomHomeCards(JobTitle: "Plumber", Name: "Ramesh", Location: "Mullana", Salary: "(\$12)", Image: "", WorkDuration: "Mon-Sat", rating: "4.5", Experience: "(2 yrs"),
-        ],
+      body: Padding(
+        padding:  EdgeInsets.symmetric(horizontal: 25.0, vertical: 10),
+        child: Column(
+          children: [
+            CustomCards.CustomHomeCards(JobTitle: "Plumber", Name: "Ramesh", Location: "Mullana", Salary: "(\$12)", Image: "", WorkDuration: "Mon-Sat", rating: "4.5", Experience: "(2 yrs)"),
+            SizedBox(height: 17),
+            CustomCards.CustomHomeCards(JobTitle: "Plumber", Name: "Ramesh", Location: "Mullana", Salary: "(\$12)", Image: "", WorkDuration: "Mon-Sat", rating: "4.5", Experience: "(2 yrs)"),
+            SizedBox(height: 17),
+
+            CustomCards.CustomHomeCards(JobTitle: "Plumber", Name: "Ramesh", Location: "Mullana", Salary: "(\$12)", Image: "", WorkDuration: "Mon-Sat", rating: "4.5", Experience: "(2 yrs)"),
+            SizedBox(height: 17),
+
+            CustomCards.CustomHomeCards(JobTitle: "Plumber", Name: "Ramesh", Location: "Mullana", Salary: "(\$12)", Image: "", WorkDuration: "Mon-Sat", rating: "4.5", Experience: "(2 yrs)"),
+            SizedBox(height: 17),
+
+            CustomCards.CustomHomeCards(JobTitle: "Plumber", Name: "Ramesh", Location: "Mullana", Salary: "(\$12)", Image: "", WorkDuration: "Mon-Sat", rating: "4.5", Experience: "(2 yrs)"),
+
+          ],
+        ),
       ),
     );
   }

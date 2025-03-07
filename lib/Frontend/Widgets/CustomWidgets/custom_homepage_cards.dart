@@ -11,11 +11,10 @@ class CustomCards {
     required String WorkDuration,
     required String rating,
     required String Experience,
-
   }) {
     return Container(
-      height: 160,
-      width: 360,
+      height: 120,
+      width: 330,
       decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(30),
           border: Border.all(color: Colors.black, width: 1.5)),
@@ -25,22 +24,25 @@ class CustomCards {
             padding: const EdgeInsets.only(left: 18.0, top: 6),
             child: Row(
               children: [
-                Column(
-                  children: [
-                    Text(
-                      JobTitle,
-                      style: GoogleFonts.inter(
-                          fontSize: 15,
-                          letterSpacing: 1,
-                          fontWeight: FontWeight.w600,
-                          color: Color(0xff4e4e4e)),
-                    ),
-                    Container(
-                      height: 1,
-                      width: 65,
-                      color: Colors.black,
-                    ),
-                  ],
+                Padding(
+                  padding: const EdgeInsets.only(left: 8.0),
+                  child: Column(
+                    children: [
+                      Text(
+                        JobTitle,
+                        style: GoogleFonts.inter(
+                            fontSize: 15,
+                            letterSpacing: 1,
+                            fontWeight: FontWeight.w600,
+                            color: Color(0xff4e4e4e)),
+                      ),
+                      Container(
+                        height: 1,
+                        width: 65,
+                        color: Colors.black,
+                      ),
+                    ],
+                  ),
                 ),
                 SizedBox(
                   width: 6,
@@ -53,7 +55,7 @@ class CustomCards {
                       color: Color(0xff66a967)),
                 ),
                 SizedBox(
-                  width: 150,
+                  width: 130,
                 ),
                 Text(
                   rating,
@@ -91,15 +93,48 @@ class CustomCards {
                       fontWeight: FontWeight.w500,
                       color: Color(0xff6b747c)),
                 ),
-                SizedBox(width: 30,),
-
-
+                SizedBox(
+                  width: 30,
+                ),
               ],
             ),
+            subtitle: Padding(
+              padding: const EdgeInsets.only(top: 5.0),
+              child: Row(
+                children: [
+                  Icon(
+                    Icons.calendar_today_outlined,
+                    color: Colors.black,
+                    size: 20,
+                  ),
+                  SizedBox(
+                    width: 5,
+                  ),
+                  Text(
+                    WorkDuration,
+                    style: GoogleFonts.poppins(
+                        fontSize: 15,
+                        fontWeight: FontWeight.w500,
+                        color: Color(0xff6b747c)),
+                  ),
+                  SizedBox(
+                    width: 10,
+                  ),
+                  Icon(
+                    Icons.location_on,
+                    color: Colors.indigoAccent,
+                  ),
+                  Text(
+                    Location,
+                    style: GoogleFonts.poppins(
+                        fontSize: 15,
+                        fontWeight: FontWeight.w500,
+                        color: Color(0xff6b747c)),
+                  ),
+                ],
+              ),
+            ),
           ),
-          Text(Name),
-          Text(Location),
-          Text(WorkDuration),
         ],
       ),
     );
