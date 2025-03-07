@@ -122,7 +122,7 @@ class CustomCards {
                   ),
                   Icon(
                     Icons.location_on,
-                    color: Colors.indigoAccent,
+                    color: Colors.blueGrey,
                   ),
                   Text(
                     Location,

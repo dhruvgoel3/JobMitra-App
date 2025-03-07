@@ -3,6 +3,7 @@ import 'package:get/get.dart';
 import 'package:get/get_core/src/get_main.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:laborlane/Frontend/MainAppUi/HomePage/home_page.dart';
+import 'package:laborlane/Frontend/Widgets/bottom_nav_bar.dart';
 import 'package:laborlane/Frontend/Widgets/round_button.dart';
 
 class LoginScrean extends StatelessWidget {
@@ -51,7 +52,7 @@ class LoginScrean extends StatelessWidget {
           ),
           Padding(
             padding:  EdgeInsets.only(top: height*0.9,left: width*0.07),
-            child: RoundButton(title: "Login", onTap: (){Get.to(()=>HomePage());}),
+            child: RoundButton(title: "Login", onTap: (){Get.to(()=>BottomNavbar());}),
           )
         ],
       ),
