@@ -8,6 +8,7 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:laborlane/Frontend/LoginScrean/login_screan.dart';
 import 'package:laborlane/Frontend/MainAppUi/HomePage/home_page.dart';
 import 'package:laborlane/Frontend/Widgets/CustomWidgets/custom_widgets.dart';
+import 'package:laborlane/Frontend/Widgets/bottom_nav_bar.dart';
 import 'package:laborlane/Frontend/Widgets/round_button.dart';
 import 'package:laborlane/Frontend/Widgets/textfields.dart';
 
@@ -116,7 +117,7 @@ class _SignupPageState extends State<SignupPage> {
                       setState(() {
                         loading = false;
                       });
-                      Get.to(() => HomePage());
+                      Get.to(() => BottomNavbar());
                     }).catchError((error) {
                       Utils().toastMessage(error.toString());
                       setState(() {
