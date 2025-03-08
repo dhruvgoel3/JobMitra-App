@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:laborlane/Frontend/MainAppUi/HomePage/search_jobs_section.dart';
 import 'package:laborlane/Frontend/Widgets/CustomWidgets/custom_homepage_cards.dart';
 
 class HomePage extends StatefulWidget {
@@ -13,6 +14,7 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.white,
       appBar: AppBar(
         shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.only(
@@ -37,24 +39,78 @@ class _HomePageState extends State<HomePage> {
         ],
       ),
       body: SingleChildScrollView(
-        child: Padding(
-          padding:  EdgeInsets.symmetric(horizontal: 25.0, vertical: 10),
-          child: Column(
-            children: [
-              CustomCards.CustomHomeCards(JobTitle: "Plumber", Name: "Ramesh", Location: "Mullana", Salary: "(\$12)", Image: "", WorkDuration: "Mon-Sat", rating: "4.5", Experience: "(2 yrs)"),
-              SizedBox(height: 17),
-              CustomCards.CustomHomeCards(JobTitle: "Plumber", Name: "Ramesh", Location: "Mullana", Salary: "(\$12)", Image: "", WorkDuration: "Mon-Sat", rating: "4.5", Experience: "(2 yrs)"),
-              SizedBox(height: 17),
-              CustomCards.CustomHomeCards(JobTitle: "Plumber", Name: "Ramesh", Location: "Mullana", Salary: "(\$12)", Image: "", WorkDuration: "Mon-Sat", rating: "4.5", Experience: "(2 yrs)"),
-              SizedBox(height: 17),
-              CustomCards.CustomHomeCards(JobTitle: "Plumber", Name: "Ramesh", Location: "Mullana", Salary: "(\$12)", Image: "", WorkDuration: "Mon-Sat", rating: "4.5", Experience: "(2 yrs)"),
-              SizedBox(height: 17),
-              CustomCards.CustomHomeCards(JobTitle: "Plumber", Name: "Ramesh", Location: "Mullana", Salary: "(\$12)", Image: "", WorkDuration: "Mon-Sat", rating: "4.5", Experience: "(2 yrs)"),
-              SizedBox(height: 17),
-              CustomCards.CustomHomeCards(JobTitle: "Plumber", Name: "Ramesh", Location: "Mullana", Salary: "(\$12)", Image: "", WorkDuration: "Mon-Sat", rating: "4.5", Experience: "(2 yrs)"),
-
-            ],
-          ),
+        child: Column(
+          children: [
+            SearchJobsSection(),
+            SingleChildScrollView(
+              child: Padding(
+                padding: EdgeInsets.symmetric(horizontal: 25.0, vertical: 10),
+                child: Column(
+                  children: [
+                    CustomCards.CustomHomeCards(
+                        JobTitle: "Plumber",
+                        Name: "Ramesh",
+                        Location: "Mullana",
+                        Salary: "(\$12)",
+                        Image: "",
+                        WorkDuration: "Mon-Sat",
+                        rating: "4.5",
+                        Experience: "(2 yrs)"),
+                    SizedBox(height: 17),
+                    CustomCards.CustomHomeCards(
+                        JobTitle: "Plumber",
+                        Name: "Ramesh",
+                        Location: "Mullana",
+                        Salary: "(\$12)",
+                        Image: "",
+                        WorkDuration: "Mon-Sat",
+                        rating: "4.5",
+                        Experience: "(2 yrs)"),
+                    SizedBox(height: 17),
+                    CustomCards.CustomHomeCards(
+                        JobTitle: "Plumber",
+                        Name: "Ramesh",
+                        Location: "Mullana",
+                        Salary: "(\$12)",
+                        Image: "",
+                        WorkDuration: "Mon-Sat",
+                        rating: "4.5",
+                        Experience: "(2 yrs)"),
+                    SizedBox(height: 17),
+                    CustomCards.CustomHomeCards(
+                        JobTitle: "Plumber",
+                        Name: "Ramesh",
+                        Location: "Mullana",
+                        Salary: "(\$12)",
+                        Image: "",
+                        WorkDuration: "Mon-Sat",
+                        rating: "4.5",
+                        Experience: "(2 yrs)"),
+                    SizedBox(height: 17),
+                    CustomCards.CustomHomeCards(
+                        JobTitle: "Plumber",
+                        Name: "Ramesh",
+                        Location: "Mullana",
+                        Salary: "(\$12)",
+                        Image: "",
+                        WorkDuration: "Mon-Sat",
+                        rating: "4.5",
+                        Experience: "(2 yrs)"),
+                    SizedBox(height: 17),
+                    CustomCards.CustomHomeCards(
+                        JobTitle: "Plumber",
+                        Name: "Ramesh",
+                        Location: "Mullana",
+                        Salary: "(\$12)",
+                        Image: "",
+                        WorkDuration: "Mon-Sat",
+                        rating: "4.5",
+                        Experience: "(2 yrs)"),
+                  ],
+                ),
+              ),
+            ),
+          ],
         ),
       ),
     );

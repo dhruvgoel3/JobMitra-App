@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:get/get_core/src/get_main.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:laborlane/Frontend/Widgets/bottom_nav_bar.dart';
 
 class CustomWidgets {
   static CustomTextfield(
@@ -49,19 +52,61 @@ class CustomWidgets {
   }
 
   static CustomSignUpGoogleButton() {
+    return InkWell(
+      onTap: () {
+        Get.to(() => BottomNavbar());
+      },
+      child: Container(
+        child: Padding(
+          padding: const EdgeInsets.only(left: 32.0),
+          child: Row(
+            children: [
+              Image.asset("assets/images/Google.png"),
+              SizedBox(width: 15),
+              Text(
+                "Continue with Google",
+                style: GoogleFonts.poppins(
+                    fontSize: 18,
+                    fontWeight: FontWeight.w400,
+                    color: Colors.black),
+              )
+            ],
+          ),
+        ),
+        height: 40,
+        width: 330,
+        decoration: BoxDecoration(
+          border: Border.all(color: Colors.black, width: 1),
+          borderRadius: BorderRadius.circular(40),
+        ),
+      ),
+    );
+  }
+
+  static CustomSignUpPhoneButton() {
     return Container(
-      child: Row(
-        children: [
-          SizedBox(width: 0),
-          Text(
-            "Continue with Google",
-            style: GoogleFonts.poppins(
-                fontSize: 18, fontWeight: FontWeight.w400, color: Colors.black),
-          )
-        ],
+      child: Padding(
+        padding: const EdgeInsets.only(left: 20.0),
+        child: Row(
+          children: [
+            Icon(
+              Icons.phone,
+              size: 25,
+              color: Colors.black,
+            ),
+            SizedBox(width: 15),
+            Text(
+              "Continue with Phone",
+              style: GoogleFonts.poppins(
+                  fontSize: 18,
+                  fontWeight: FontWeight.w400,
+                  color: Colors.black),
+            )
+          ],
+        ),
       ),
       height: 40,
-      width: 330,
+      width: 270,
       decoration: BoxDecoration(
         border: Border.all(color: Colors.black, width: 1),
         borderRadius: BorderRadius.circular(40),

@@ -12,6 +12,7 @@ import 'package:laborlane/Frontend/Widgets/round_button.dart';
 import 'package:laborlane/Frontend/Widgets/textfields.dart';
 
 import '../../Services/Auth Services/auth_services.dart';
+import '../../Utils/utils.dart';
 
 class SignupPage extends StatefulWidget {
   const SignupPage({super.key});
@@ -21,6 +22,7 @@ class SignupPage extends StatefulWidget {
 }
 
 class _SignupPageState extends State<SignupPage> {
+  FirebaseAuth _auth = FirebaseAuth.instance;
   bool loading = false;
   final _formKey = GlobalKey<FormState>();
   final nameController = TextEditingController();
@@ -100,37 +102,28 @@ class _SignupPageState extends State<SignupPage> {
             Padding(
               padding: EdgeInsets.only(top: height * 0.7, left: width * 0.055),
               child: RoundButton(
-                title: "Sign Up",
-                onTap: () async {
-                  if (_formKey.currentState!.validate()) {
-                    if (passwordController.text !=
-                        confirmpasswordController.text) {
-                      Get.snackbar("Error", "Passwords do not match");
-                      return;
-                    }
-
+                  Loading: loading,
+                  title: "Sign Up",
+                  onTap: () {
                     setState(() {
                       loading = true;
                     });
-
-                    String response = await AuthService.AccountwithEmail(
-                        emailController.text, passwordController.text);
-
-                    setState(() {
-                      loading = false;
-                    });
-
-                    if (response == "Account Created") {
-                      Get.snackbar("Success", "Account Created");
+                    _auth
+                        .createUserWithEmailAndPassword(
+                            email: emailController.text.trim(),
+                            password: passwordController.text.trim())
+                        .then((value) {
+                      setState(() {
+                        loading = false;
+                      });
                       Get.to(() => HomePage());
-                    } else {
-                      Get.snackbar("Error", response);
-                    }
-                  } else {
-                    Get.snackbar("Error", "Please fill all fields correctly");
-                  }
-                },
-              ),
+                    }).catchError((error) {
+                      Utils().toastMessage(error.toString());
+                      setState(() {
+                        loading = false;
+                      });
+                    });
+                  }),
             ),
             Padding(
               padding: EdgeInsets.only(top: height * 0.78, left: width * 0.45),
@@ -142,8 +135,9 @@ class _SignupPageState extends State<SignupPage> {
             ),
             Padding(
               padding: EdgeInsets.only(top: height * 0.83, left: 23),
-              child: Row(
-                children: [CustomWidgets.CustomSignUpGoogleButton()],
+              child: Column(
+                children: [CustomWidgets.CustomSignUpGoogleButton()
+                ],
               ),
             ),
             Padding(
