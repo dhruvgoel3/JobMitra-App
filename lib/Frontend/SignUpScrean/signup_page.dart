@@ -6,7 +6,6 @@ import 'package:get/get.dart';
 import 'package:get/get_core/src/get_main.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:laborlane/Frontend/LoginScrean/login_screan.dart';
-import 'package:laborlane/Frontend/MainAppUi/HomePage/home_page.dart';
 import 'package:laborlane/Frontend/Widgets/CustomWidgets/custom_widgets.dart';
 import 'package:laborlane/Frontend/Widgets/bottom_nav_bar.dart';
 import 'package:laborlane/Frontend/Widgets/round_button.dart';
@@ -137,8 +136,7 @@ class _SignupPageState extends State<SignupPage> {
             Padding(
               padding: EdgeInsets.only(top: height * 0.83, left: 23),
               child: Column(
-                children: [CustomWidgets.CustomSignUpGoogleButton()
-                ],
+                children: [CustomWidgets.CustomSignUpGoogleButton()],
               ),
             ),
             Padding(
@@ -172,3 +170,4 @@ class _SignupPageState extends State<SignupPage> {
     );
   }
 }
+// Done
