@@ -104,26 +104,7 @@ class _SignupPageState extends State<SignupPage> {
               child: RoundButton(
                   Loading: loading,
                   title: "Sign Up",
-                  onTap: () {
-                    setState(() {
-                      loading = true;
-                    });
-                    _auth
-                        .createUserWithEmailAndPassword(
-                            email: emailController.text.trim(),
-                            password: passwordController.text.trim())
-                        .then((value) {
-                      setState(() {
-                        loading = false;
-                      });
-                      Get.to(() => BottomNavbar());
-                    }).catchError((error) {
-                      Utils().toastMessage(error.toString());
-                      setState(() {
-                        loading = false;
-                      });
-                    });
-                  }),
+                  onTap: () {}),
             ),
             Padding(
               padding: EdgeInsets.only(top: height * 0.78, left: width * 0.45),
