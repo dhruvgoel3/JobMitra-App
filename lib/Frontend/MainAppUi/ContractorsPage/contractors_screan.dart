@@ -46,7 +46,7 @@ class _ContractorsScreanState extends State<ContractorsScrean> {
       body: Column(
         children: [
           SearchSection(),
-          ContractorCards().CustomContractorCards(ContractorName: "DMC Housing", rating: "4.5", image: "")
+          ContractorCards().CustomContractorCards(ContractorName: "DMC Housing", rating: "4.5", image: Image.asset("assets/images/images 3.png",height: 100,)),
         ],
       ),
     );
