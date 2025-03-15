@@ -10,46 +10,96 @@ class ContractorCards {
     return Card(
       child: Container(
         height: 120,
-        width: 360,
+        width: 340,
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(15),
           color: Colors.white,
         ),
         child: Row(
           children: [
-            SizedBox(width: 10,),
+            SizedBox(
+              width: 10,
+            ),
             image,
             Column(
               children: [
                 Padding(
-                  padding: const EdgeInsets.only(top: 8.0,),
+                  padding: const EdgeInsets.only(
+                    top: 8.0,
+                  ),
                   child: Row(
                     children: [
-                      Text(ContractorName,style: GoogleFonts.inter(fontSize: 15,fontWeight: FontWeight.w500,color: Colors.black),),
-                      SizedBox(width: 40),
-                      Text(rating),
+                      SizedBox(
+                        width: 10,
+                      ),
+                      Text(
+                        ContractorName,
+                        style: GoogleFonts.inter(
+                            fontSize: 15,
+                            fontWeight: FontWeight.w500,
+                            color: Colors.black),
+                      ),
+                      SizedBox(width: 30),
+                      Text(
+                        rating,
+                        style: GoogleFonts.inter(
+                            fontSize: 14,
+                            fontWeight: FontWeight.w500,
+                            color: Colors.grey),
+                      ),
+                      Icon(
+                        Icons.star,
+                        color: Colors.amber,
+                        size: 18,
+                      ),
                     ],
                   ),
                 ),
-                Text("500+"),
+                Padding(
+                  padding: EdgeInsets.only(right: 120),
+                  child: Text(
+                    "500+",
+                    style: GoogleFonts.inter(
+                        fontSize: 15,
+                        fontWeight: FontWeight.w600,
+                        color: Colors.green),
+                  ),
+                ),
                 Row(
                   children: [
-                    Text("Projects"),
-                    Icon(Icons.home,color: Colors.amber,)
+                    Text(
+                      "Projects",
+                      style: GoogleFonts.inter(
+                          fontSize: 15,
+                          fontWeight: FontWeight.w500,
+                          color: Colors.grey),
+                    ),
+                    Padding(
+                      padding: EdgeInsets.only(right: 79.0),
+                      child: Icon(
+                        Icons.home,
+                        color: Colors.amber,
+                      ),
+                    )
                   ],
                 ),
+                SizedBox(
+                  height: 10,
+                ),
                 Container(
-                  height: 20,
-                  width: 115,
+                  height: 25,
+                  width: 120,
                   decoration: BoxDecoration(
-                      color: Colors.lightGreen.shade50,
+                      color: Colors.lightGreen.shade50.withOpacity(0.7),
                       borderRadius: BorderRadius.circular(4)),
                   child: Center(
                       child: Text(
-                        "Book your slot",
-                        style: GoogleFonts.inter(
-                            fontWeight: FontWeight.w500, color: Colors.green),
-                      )),
+                    "Book your slot",
+                    style: GoogleFonts.inter(
+                        fontSize: 15,
+                        fontWeight: FontWeight.w600,
+                        color: Colors.green),
+                  )),
                 ),
               ],
             ),

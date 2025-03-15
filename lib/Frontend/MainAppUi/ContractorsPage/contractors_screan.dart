@@ -43,11 +43,33 @@ class _ContractorsScreanState extends State<ContractorsScrean> {
           )
         ],
       ),
-      body: Column(
-        children: [
-          SearchSection(),
-          ContractorCards().CustomContractorCards(ContractorName: "DMC Housing", rating: "4.5", image: Image.asset("assets/images/images 3.png",height: 100,)),
-        ],
+      body: SingleChildScrollView(
+        child: Column(
+          children: [
+            SearchSection(),
+            ContractorCards().CustomContractorCards(
+                ContractorName: "DMC Housing",
+                rating: "4.5",
+                image: Image.asset(
+                  "assets/images/images 3.png",
+                  height: 100,
+                )),
+            ContractorCards().CustomContractorCards(
+                ContractorName: "TATA Housing",
+                rating: "4.5",
+                image: Image.asset(
+                  "assets/images/images 5.png",
+                  height: 100,
+                )),
+            ContractorCards().CustomContractorCards(
+                ContractorName: "BIRLA Housing",
+                rating: "4.5",
+                image: Image.asset(
+                  "assets/images/images 3.png",
+                  height: 100,
+                )),
+          ],
+        ),
       ),
     );
   }
