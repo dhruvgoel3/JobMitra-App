@@ -1,10 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:laborlane/Frontend/MainAppUi/ContractorsPage/search_section.dart';
+import 'package:laborlane/Frontend/MainAppUi/Hiring_Interface/ContractorsPage/search_section.dart';
 import 'package:laborlane/Frontend/Widgets/CustomWidgets/contractor_page_cards.dart';
 import 'package:laborlane/Frontend/Widgets/CustomWidgets/custom_contractor_groups.dart';
 
-import '../../Widgets/CustomWidgets/jobs_category.dart';
 
 class ContractorsScrean extends StatefulWidget {
   const ContractorsScrean({super.key});

@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:laborlane/Frontend/MainAppUi/ContractorsPage/contractors_screan.dart';
-import 'package:laborlane/Frontend/MainAppUi/HomePage/home_page.dart';
-import 'package:laborlane/Frontend/MainAppUi/MessagesPage/messages_screan.dart';
-import 'package:laborlane/Frontend/MainAppUi/ProfilePage/profile_screan.dart';
+import '../MainAppUi/Hiring_Interface/ContractorsPage/contractors_screan.dart';
+import '../MainAppUi/Hiring_Interface/HomePage/home_page.dart';
+import '../MainAppUi/Hiring_Interface/MessagesPage/messages_screan.dart';
+import '../MainAppUi/Hiring_Interface/ProfilePage/profile_screan.dart';
 
 class BottomNavbar extends StatefulWidget {
   const BottomNavbar({super.key});

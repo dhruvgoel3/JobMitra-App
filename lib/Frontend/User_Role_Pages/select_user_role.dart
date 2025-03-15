@@ -32,11 +32,11 @@ class SelectUserRole extends StatelessWidget {
               ],
             ),
           ),
-          RoundButton(title: "Find a job", onTap: (){Get.to(()=>SignupPage());}),
+          RoundButton(title: "Find a job", onTap: (){Get.to(()=>Placeholder());}),
           SizedBox(height: 10),
           Text("OR",style: GoogleFonts.poppins(fontSize: 24,fontWeight: FontWeight.w700,color: Colors.black),),
           SizedBox(height: 10),
-          RoundButton(title: "I want to hire people", onTap: (){Get.to(()=>SelectUserRole());}),
+          RoundButton(title: "I want to hire people", onTap: (){Get.to(()=>SignupPage());}),
         ],
       ),
     );

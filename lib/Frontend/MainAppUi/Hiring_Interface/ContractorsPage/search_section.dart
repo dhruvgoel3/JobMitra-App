@@ -2,8 +2,8 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-import '../../Widgets/CustomWidgets/custom_contractor_groups.dart';
-import '../../Widgets/CustomWidgets/jobs_category.dart';
+import '../../../Widgets/CustomWidgets/custom_contractor_groups.dart';
+import '../../../Widgets/CustomWidgets/jobs_category.dart';
 
 class SearchSection extends StatefulWidget {
   const SearchSection({super.key});

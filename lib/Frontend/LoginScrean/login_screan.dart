@@ -3,7 +3,6 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:get/get_core/src/get_main.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:laborlane/Frontend/MainAppUi/HomePage/home_page.dart';
 import 'package:laborlane/Frontend/SignUpScrean/signup_page.dart';
 import 'package:laborlane/Frontend/Widgets/CustomWidgets/custom_widgets.dart';
 import 'package:laborlane/Frontend/Widgets/bottom_nav_bar.dart';

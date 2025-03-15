@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:laborlane/Frontend/MainAppUi/HomePage/search_jobs_section.dart';
+import 'package:laborlane/Frontend/MainAppUi/Hiring_Interface/HomePage/search_jobs_section.dart';
 import 'package:laborlane/Frontend/Widgets/CustomWidgets/custom_homepage_cards.dart';
 
 class HomePage extends StatefulWidget {
