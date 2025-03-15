@@ -1,5 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:laborlane/Frontend/MainAppUi/ContractorsPage/search_section.dart';
+import 'package:laborlane/Frontend/Widgets/CustomWidgets/contractor_page_cards.dart';
+import 'package:laborlane/Frontend/Widgets/CustomWidgets/custom_contractor_groups.dart';
+
+import '../../Widgets/CustomWidgets/jobs_category.dart';
 
 class ContractorsScrean extends StatefulWidget {
   const ContractorsScrean({super.key});
@@ -11,7 +16,10 @@ class ContractorsScrean extends StatefulWidget {
 class _ContractorsScreanState extends State<ContractorsScrean> {
   @override
   Widget build(BuildContext context) {
+    var height = MediaQuery.of(context).size.height;
+    var width = MediaQuery.of(context).size.width;
     return Scaffold(
+      backgroundColor: Colors.white,
       appBar: AppBar(
         shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.only(
@@ -22,7 +30,7 @@ class _ContractorsScreanState extends State<ContractorsScrean> {
         title: Text(
           "Contractors",
           style: GoogleFonts.poppins(
-              fontWeight: FontWeight.w600, fontSize: 25, color: Colors.black),
+              fontWeight: FontWeight.w600, fontSize: 23, color: Colors.black),
         ),
         titleSpacing: 3,
         actions: [
@@ -33,6 +41,12 @@ class _ContractorsScreanState extends State<ContractorsScrean> {
               height: 27,
             ),
           )
+        ],
+      ),
+      body: Column(
+        children: [
+          SearchSection(),
+          ContractorCards().CustomContractorCards(ContractorName: "DMC Housing", rating: "4.5", image: "")
         ],
       ),
     );
