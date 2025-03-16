@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:laborlane/Frontend/MainAppUi/Find_Job_Interface/HomePage/search_section.dart';
+import 'package:laborlane/Frontend/MainAppUi/Find_Job_Interface/Widgets/CustomWidgets/featured_work_cards.dart';
 
 class UserHomePage extends StatefulWidget {
   const UserHomePage({super.key});
@@ -39,23 +40,113 @@ class _HomePageState extends State<UserHomePage> {
           )
         ],
       ),
-      body: Column(
-        children: [
-          SearchSection(),
-          SizedBox(
-            height: 10,
-          ),
-          Padding(
-            padding: EdgeInsets.only(right: width * 0.2),
-            child: Text(
-              "Featured Jobs (Part / Full Time)",
-              style: GoogleFonts.poppins(
-                  fontWeight: FontWeight.w700,
-                  fontSize: 16,
-                  color: Colors.black),
+      body: SingleChildScrollView(
+        child: Column(
+          children: [
+            SearchSection(),
+            SizedBox(
+              height: 10,
             ),
-          ),
-        ],
+            Padding(
+              padding: EdgeInsets.only(right: width * 0.2),
+              child: Text(
+                "Featured Jobs (Part / Full Time)",
+                style: GoogleFonts.poppins(
+                    fontWeight: FontWeight.w700,
+                    fontSize: 16,
+                    color: Colors.black),
+              ),
+            ),
+            SizedBox(
+              height: 10,
+            ),
+            SingleChildScrollView(
+              scrollDirection: Axis.horizontal,
+              child: Row(
+                children: [
+                  SizedBox(
+                    width: 15,
+                  ),
+                  FeaturedWork.CustomFeaturedWorkCard(
+                      image: Image.asset("assets/images/Google.png"),
+                      JobTitle: "Electrician",
+                      CompanyName: "BuildTech Solutions",
+                      Salary: "5560/-Month",
+                      Experience: "1+ yrs exp",
+                      WorkLocation: "Mumbai",
+                      WorkDuration: "3 Months",
+                      ontap: () {}),
+                  FeaturedWork.CustomFeaturedWorkCard(
+                      image: Image.asset("assets/images/Google.png"),
+                      JobTitle: "Plumber",
+                      CompanyName: "Jai Solutions",
+                      Salary: "10k/-Month",
+                      Experience: "non",
+                      WorkLocation: "Haryana",
+                      WorkDuration: "2 Months",
+                      ontap: () {}),
+                  FeaturedWork.CustomFeaturedWorkCard(
+                      image: Image.asset("assets/images/Google.png"),
+                      JobTitle: "Carpenter",
+                      CompanyName: "Shrine Solutions",
+                      Salary: "10k/-Month",
+                      Experience: "non",
+                      WorkLocation: "Haryana",
+                      WorkDuration: "2 Months",
+                      ontap: () {}),
+                ],
+              ),
+            ),
+            SizedBox(
+              height: 10,
+            ),
+            Padding(
+              padding: EdgeInsets.only(right: width * 0.44),
+              child: Text(
+                "Recommended Jobs",
+                style: GoogleFonts.poppins(
+                    fontWeight: FontWeight.w700,
+                    fontSize: 16,
+                    color: Colors.black),
+              ),
+            ),
+            SizedBox(height: 10),
+            Column(
+              children: [
+                SizedBox(
+                  width: 15,
+                ),
+                FeaturedWork.CustomRecomendedJobsCard(
+                    image: Image.asset("assets/images/Google.png"),
+                    JobTitle: "Plumbing Technician",
+                    CompanyName: "WaterPro Services",
+                    Salary: "\$22/hour",
+                    Experience: "2+ yrs exp",
+                    WorkLocation: "Banglore",
+                    WorkDuration: "3 months",
+                    ontap: () {}),
+                FeaturedWork.CustomRecomendedJobsCard(
+                    image: Image.asset("assets/images/Google.png"),
+                    JobTitle: "Plumbing Technician",
+                    CompanyName: "WaterPro Services",
+                    Salary: "\$22/hour",
+                    Experience: "2+ yrs exp",
+                    WorkLocation: "Banglore",
+                    WorkDuration: "3 months",
+                    ontap: () {}),
+                FeaturedWork.CustomRecomendedJobsCard(
+                    image: Image.asset("assets/images/Google.png"),
+                    JobTitle: "Plumbing Technician",
+                    CompanyName: "WaterPro Services",
+                    Salary: "\$22/hour",
+                    Experience: "2+ yrs exp",
+                    WorkLocation: "Banglore",
+                    WorkDuration: "3 months",
+                    ontap: () {}),
+              ],
+            )
+          ],
+        ),
       ),
     );
   }
