@@ -123,7 +123,11 @@ class CustomCards {
                             fontWeight: FontWeight.w500, color: Colors.green),
                       )),
                     ),
-                    Icon(Icons.arrow_right,color: Colors.black,size: 30,)
+                    Icon(
+                      Icons.arrow_right,
+                      color: Colors.black,
+                      size: 30,
+                    )
                   ],
                 ),
                 Row(

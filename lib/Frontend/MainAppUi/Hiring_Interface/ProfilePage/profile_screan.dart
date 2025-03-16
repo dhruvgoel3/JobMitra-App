@@ -73,6 +73,9 @@ class _ProfileScreanState extends State<ProfileScrean> {
                           width: 15,
                         ),
                         CircleAvatar(
+                          backgroundImage: AssetImage(
+                            "assets/images/images 1.png",
+                          ),
                           radius: 50,
                         ),
                         Padding(
@@ -97,7 +100,7 @@ class _ProfileScreanState extends State<ProfileScrean> {
                                 ],
                               ),
                               Text(
-                                "+ 906736448",
+                                "+91-906736448",
                                 style: GoogleFonts.inter(
                                     fontWeight: FontWeight.w400,
                                     fontSize: 15,
