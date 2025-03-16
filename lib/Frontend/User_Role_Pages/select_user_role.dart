@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:get/get_core/src/get_main.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:laborlane/Frontend/MainAppUi/Find_Job_Interface/Widgets/bottom_navigation_bar.dart';
 import 'package:laborlane/Frontend/SignUpScrean/signup_page.dart';
 import 'package:laborlane/Frontend/Widgets/round_button.dart';
 
@@ -32,7 +33,7 @@ class SelectUserRole extends StatelessWidget {
               ],
             ),
           ),
-          RoundButton(title: "Find a job", onTap: (){Get.to(()=>Placeholder());}),
+          RoundButton(title: "Find a job", onTap: (){Get.to(()=>UserBottomNavbar());}),
           SizedBox(height: 10),
           Text("OR",style: GoogleFonts.poppins(fontSize: 24,fontWeight: FontWeight.w700,color: Colors.black),),
           SizedBox(height: 10),
