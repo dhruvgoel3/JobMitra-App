@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+
 class UserProfilePage extends StatefulWidget {
   const UserProfilePage({super.key});
 
@@ -26,9 +27,8 @@ class _UserProfilePageState extends State<UserProfilePage> {
         titleSpacing: 3,
         actions: [
           Padding(
-            padding: const EdgeInsets.only(right: 20),
-            child: Icon(Icons.gpp_good)
-          )
+              padding: const EdgeInsets.only(right: 20),
+              child: Icon(Icons.gpp_good))
         ],
       ),
       body: Column(
@@ -92,11 +92,29 @@ class _UserProfilePageState extends State<UserProfilePage> {
                             ),
                             Row(
                               children: [
-                                Icon(Icons.star,color: Colors.amber,size: 20,),
-                                Icon(Icons.star,color: Colors.amber,size: 20,),
-                                Icon(Icons.star,color: Colors.amber,size: 20,),
-                                Icon(Icons.star,color: Colors.amber,size: 20,),
-                                SizedBox(width: 5,),
+                                Icon(
+                                  Icons.star,
+                                  color: Colors.amber,
+                                  size: 20,
+                                ),
+                                Icon(
+                                  Icons.star,
+                                  color: Colors.amber,
+                                  size: 20,
+                                ),
+                                Icon(
+                                  Icons.star,
+                                  color: Colors.amber,
+                                  size: 20,
+                                ),
+                                Icon(
+                                  Icons.star,
+                                  color: Colors.amber,
+                                  size: 20,
+                                ),
+                                SizedBox(
+                                  width: 5,
+                                ),
                                 Text(
                                   "4.1 (440 reviews)",
                                   style: GoogleFonts.inter(
@@ -104,7 +122,6 @@ class _UserProfilePageState extends State<UserProfilePage> {
                                       fontSize: 15,
                                       color: Colors.grey),
                                 ),
-
                               ],
                             ),
                             Text(
