@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:laborlane/Frontend/MainAppUi/Find_Job_Interface/MakeTeamPage/textfields_part.dart';
+import 'package:laborlane/Frontend/MainAppUi/Find_Job_Interface/Widgets/CustomWidgets/custom_invite_buttons.dart';
+
+import '../Widgets/CustomWidgets/featured_work_cards.dart';
 
 class MakeTeamPage extends StatefulWidget {
   const MakeTeamPage({super.key});
@@ -41,67 +44,106 @@ class _MakeTeamPageState extends State<MakeTeamPage> {
         ],
       ),
       body: SingleChildScrollView(
-        child: Column(
-          children: [
-            Image.asset(
-              "assets/images/team image.png",
-              width: width * 0.8,
-              height: height * 0.3,
+        child: Column(children: [
+          Image.asset(
+            "assets/images/team image.png",
+            width: width * 0.8,
+            height: height * 0.3,
+          ),
+          TextfieldsPart(),
+          SizedBox(
+            height: 15,
+          ),
+          Padding(
+            padding: EdgeInsets.only(right: width * 0.25),
+            child: Text(
+              "Add Team Members",
+              style: GoogleFonts.poppins(
+                  fontSize: 20, fontWeight: FontWeight.w600),
             ),
-            TextfieldsPart(),
-            SizedBox(
-              height: 15,
-            ),
-            Padding(
-              padding: EdgeInsets.only(right: width * 0.25),
-              child: Text(
-                "Add Team Members",
-                style: GoogleFonts.poppins(
-                    fontSize: 20, fontWeight: FontWeight.w600),
-              ),
-            ),
-            SizedBox(
-              height: 15,
-            ),
-            Padding(
-              padding: const EdgeInsets.only(left: 23.0),
-              child: Container(
-                height: 45,
-                width: 335,
-                decoration: BoxDecoration(
-                    color: Colors.white,
-                    border: Border.all(color: Colors.grey),
-                    borderRadius: BorderRadius.circular(5),
-                    boxShadow: [
-                      BoxShadow(
-                          color: Colors.black.withOpacity(0.1),
-                          offset: Offset(0, -5),
-                          blurRadius: 4)
-                    ]),
-                child: TextFormField(
-                  cursorColor: Colors.black,
-                  cursorHeight: 18,
-                  controller: SearchController,
-                  decoration: InputDecoration(
-                    hintText: "Location",
-                    iconColor: Colors.black,
-                    suffixIcon: Icon(
-                      Icons.search,
-                      color: Colors.grey,
-                    ),
-                    hintStyle: GoogleFonts.poppins(
-                        fontSize: 15,
-                        fontWeight: FontWeight.w400,
-                        color: Colors.black),
-                    border: OutlineInputBorder(
-                      borderSide: BorderSide.none,
-                      borderRadius: BorderRadius.circular(10),
-                    ),
+          ),
+          SizedBox(
+            height: 15,
+          ),
+          Padding(
+            padding: const EdgeInsets.only(left: 15.0),
+            child: Container(
+              height: 45,
+              width: 335,
+              decoration: BoxDecoration(
+                  color: Colors.white,
+                  border: Border.all(color: Colors.grey),
+                  borderRadius: BorderRadius.circular(5),
+                  boxShadow: [
+                    BoxShadow(
+                        color: Colors.black.withOpacity(0.1),
+                        offset: Offset(0, -5),
+                        blurRadius: 4)
+                  ]),
+              child: TextFormField(
+                cursorColor: Colors.black,
+                cursorHeight: 18,
+                controller: SearchController,
+                decoration: InputDecoration(
+                  hintText: "Location",
+                  iconColor: Colors.black,
+                  suffixIcon: Icon(
+                    Icons.search,
+                    color: Colors.grey,
+                  ),
+                  hintStyle: GoogleFonts.poppins(
+                      fontSize: 15,
+                      fontWeight: FontWeight.w400,
+                      color: Colors.black),
+                  border: OutlineInputBorder(
+                    borderSide: BorderSide.none,
+                    borderRadius: BorderRadius.circular(10),
                   ),
                 ),
               ),
             ),
-          ],
+          ),
+          SizedBox(
+            height: 15,
+          ),
+          Padding(
+            padding: const EdgeInsets.only(left: 13),
+            child: Column(
+              children: [
+                FeaturedWork.CustomRecomendedJobsCard(
+                    image: Image.asset("assets/images/Google.png"),
+                    JobTitle: "Plumbing Technician",
+                    CompanyName: "WaterPro Services",
+                    Salary: "\$22/hour",
+                    Experience: "2+ yrs exp",
+                    WorkLocation: "Banglore",
+                    WorkDuration: "3 months",
+                    ontap: () {}),
+                FeaturedWork.CustomRecomendedJobsCard(
+                    image: Image.asset("assets/images/Google.png"),
+                    JobTitle: "Plumbing Technician",
+                    CompanyName: "WaterPro Services",
+                    Salary: "\$22/hour",
+                    Experience: "2+ yrs exp",
+                    WorkLocation: "Banglore",
+                    WorkDuration: "3 months",
+                    ontap: () {}),
+                FeaturedWork.CustomRecomendedJobsCard(
+                    image: Image.asset("assets/images/Google.png"),
+                    JobTitle: "Plumbing Technician",
+                    CompanyName: "WaterPro Services",
+                    Salary: "\$22/hour",
+                    Experience: "2+ yrs exp",
+                    WorkLocation: "Banglore",
+                    WorkDuration: "3 months",
+                    ontap: () {}),
+              ],
+            ),
+          ),
+          SizedBox(height: 10,),
+          InviteButton.CustomInviteButton(Tittle: "Invite Via Whatsap", icon: Icon(Icons.share)),
+          SizedBox(height: 20,),
+        ]
         ),
       ),
     );

@@ -27,7 +27,7 @@ class _TextfieldsPartState extends State<TextfieldsPart> {
     var height = MediaQuery.of(context).size.height;
     var width = MediaQuery.of(context).size.width;
     return Padding(
-      padding: EdgeInsets.only(left: width * 0.062, top: height * 0.02),
+      padding: EdgeInsets.only(left: width * 0.03, top: height * 0.01),
       child: Column(
         children: [
           Container(
