@@ -28,16 +28,29 @@ class SelectUserRole extends StatelessWidget {
               children: [
                 Padding(
                   padding: const EdgeInsets.only(left: 35.0),
-                  child: Image.asset("assets/images/woman worker at laptop.png"),
+                  child:
+                      Image.asset("assets/images/woman worker at laptop.png"),
                 )
               ],
             ),
           ),
-          RoundButton(title: "Find a job", onTap: (){Get.to(()=>UserBottomNavbar());}),
+          RoundButton(
+              title: "I want to hire people",
+              onTap: () {
+                Get.to(() => SignupPage());
+              }),
           SizedBox(height: 10),
-          Text("OR",style: GoogleFonts.poppins(fontSize: 24,fontWeight: FontWeight.w700,color: Colors.black),),
+          Text(
+            "OR",
+            style: GoogleFonts.poppins(
+                fontSize: 24, fontWeight: FontWeight.w700, color: Colors.black),
+          ),
           SizedBox(height: 10),
-          RoundButton(title: "I want to hire people", onTap: (){Get.to(()=>SignupPage());}),
+          RoundButton(
+              title: "Find a job",
+              onTap: () {
+                Get.to(() => UserBottomNavbar());
+              }),
         ],
       ),
     );
