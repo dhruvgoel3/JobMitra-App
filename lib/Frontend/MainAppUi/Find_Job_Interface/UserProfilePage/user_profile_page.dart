@@ -169,21 +169,50 @@ class _UserProfilePageState extends State<UserProfilePage> {
             ),
           ),
           Padding(
-            padding: const EdgeInsets.only(right: 225,top: 13),
+            padding: const EdgeInsets.only(right: 160, top: 13),
+            child: Text(
+              "Skills and Expertise",
+              style: GoogleFonts.poppins(
+                  fontWeight: FontWeight.w600,
+                  color: Colors.black,
+                  fontSize: 20),
+            ),
+          ),
+          Container(
+            height: 22,
+            width: 90,
+            decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(20),
+                color: Colors.green.withOpacity(0.2)),
+            child: Center(
+              child: Text(
+                "Available",
+                style: GoogleFonts.inter(
+                    color: Colors.green,
+                    fontSize: 15,
+                    fontWeight: FontWeight.w500),
+              ),
+            ),
+          ),
+          Padding(
+            padding: const EdgeInsets.only(right: 210, top: 13),
             child: Text(
               "Work Portfolio",
               style: GoogleFonts.poppins(
                   fontWeight: FontWeight.w600,
                   color: Colors.black,
-                  fontSize: 17),
+                  fontSize: 20),
             ),
           ),
-          Row(
-            children: [
-              Image.asset("")
-
-            ],
-          )
+          SingleChildScrollView(
+            scrollDirection: Axis.horizontal,
+            child: Row(
+              children: [
+                Image.asset("assets/images/IMG@1x.png"),
+                Image.asset("assets/images/IMG@1x (1).png"),
+              ],
+            ),
+          ),
         ],
       ),
     );
