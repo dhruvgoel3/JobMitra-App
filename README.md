@@ -29,8 +29,30 @@ By ensuring better job access, government benefits, and fair pay, JobMitra is se
  Gemini API for dispaying the desired jobs according to the user intrests<br/>
 
 ### User Flow
-![user flow](https://github.com/user-attachments/assets/3b698f8f-f0b7-45a0-88d8-a503297144b8)
+![user flow](https://github.com/user-attachments/assets/3b698f8f-f0b7-45a0-88d8-a503297144b8)<br/>
 
+# USer Interface of JobMitra
+
+### Onboarding Screans-
+
+<img src = "https://github.com/user-attachments/assets/45f4ebd5-4bd9-48a2-8885-c39167133f4f" height="500" width="220"/> 
+<img src = "https://github.com/user-attachments/assets/23a0b70e-9754-4437-b319-8c629e54e90c" height="500" width="220"/> 
+<img src = "https://github.com/user-attachments/assets/b5888b7e-3a3f-4684-b047-3780f09b78dd" height="500" width="220"/> 
+<img src = "https://github.com/user-attachments/assets/b5888b7e-3a3f-4684-b047-3780f09b78dd" height="500" width="220"/> <br/>
+
+### ~ User Pannel ( User can apply for jobs here ).
+
+<img src = "https://github.com/user-attachments/assets/c4b335c8-e54e-4eb2-8af6-238c75381ae7" height="500" width="220"/> 
+<img src = "https://github.com/user-attachments/assets/eb177c47-736d-4459-a4c2-35a37f5fe2f1" height="500" width="220"/> 
+<img src = "https://github.com/user-attachments/assets/6c9ca279-e650-4d9a-b8ec-7e588d4929b1" height="500" width="220"/> 
+<img src = "https://github.com/user-attachments/assets/00e7c915-3303-43ee-85dd-ac11ea79b5b5" height="500" width="220"/> <br/>
+
+### ~ Recruiter Panel  ( Recruiters can hire the workers here  ).
+
+<img src = "https://github.com/user-attachments/assets/2e7cdd4d-3b41-40c6-86a7-b2d32853d8c2" height="500" width="220"/> 
+<img src = "https://github.com/user-attachments/assets/32887d22-4499-4bf2-beda-fbdc84901968" height="500" width="220"/> 
+<img src = "https://github.com/user-attachments/assets/6c9ca279-e650-4d9a-b8ec-7e588d4929b1" height="500" width="220"/> 
+<img src = "https://github.com/user-attachments/assets/49215a68-a15e-4f3a-8744-356b1ecb45da" height="500" width="220"/> 
 
 
 ---- we are currently building thia idea. So kindly share you feedback if this idea finds you helpful !!
