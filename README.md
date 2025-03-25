@@ -57,7 +57,7 @@ By ensuring better job access, government benefits, and fair pay, JobMitra is se
 <img src = "https://github.com/user-attachments/assets/32887d22-4499-4bf2-beda-fbdc84901968" height="500" width="220"/> 
 <img src = "https://github.com/user-attachments/assets/6c9ca279-e650-4d9a-b8ec-7e588d4929b1" height="500" width="220"/> 
 <img src = "https://github.com/user-attachments/assets/49215a68-a15e-4f3a-8744-356b1ecb45da" height="500" width="220"/> 
-
+<br/>
 
 🛠 We're Building JobMitra!
 
