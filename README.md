@@ -38,7 +38,9 @@ By ensuring better job access, government benefits, and fair pay, JobMitra is se
 <img src = "https://github.com/user-attachments/assets/45f4ebd5-4bd9-48a2-8885-c39167133f4f" height="500" width="220"/> 
 <img src = "https://github.com/user-attachments/assets/23a0b70e-9754-4437-b319-8c629e54e90c" height="500" width="220"/> 
 <img src = "https://github.com/user-attachments/assets/b5888b7e-3a3f-4684-b047-3780f09b78dd" height="500" width="220"/> 
-<img src = "https://github.com/user-attachments/assets/b5888b7e-3a3f-4684-b047-3780f09b78dd" height="500" width="220"/> <br/>
+<img src = "https://github.com/user-attachments/assets/56bb5e1c-9a58-4095-80b8-d8f61fe1fe28" height="500" width="220"/> <br/>
+
+
 
 ### ~ User Pannel ( User can apply for jobs here ).
 
@@ -46,6 +48,8 @@ By ensuring better job access, government benefits, and fair pay, JobMitra is se
 <img src = "https://github.com/user-attachments/assets/eb177c47-736d-4459-a4c2-35a37f5fe2f1" height="500" width="220"/> 
 <img src = "https://github.com/user-attachments/assets/6c9ca279-e650-4d9a-b8ec-7e588d4929b1" height="500" width="220"/> 
 <img src = "https://github.com/user-attachments/assets/00e7c915-3303-43ee-85dd-ac11ea79b5b5" height="500" width="220"/> <br/>
+
+
 
 ### ~ Recruiter Panel  ( Recruiters can hire the workers here  ).
 
