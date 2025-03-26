@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 import '../../Hiring_Interface/MessagesPage/chats_listview.dart';
+
 class ChatPage extends StatefulWidget {
   const ChatPage({super.key});
 
@@ -65,7 +66,7 @@ class _ChatPageState extends State<ChatPage> {
                             decoration: InputDecoration(
                               prefixIcon: Icon(Icons.search_rounded),
                               suffixIcon:
-                              Icon(CupertinoIcons.slider_horizontal_3),
+                                  Icon(CupertinoIcons.slider_horizontal_3),
                               iconColor: Colors.black,
                               hintStyle: GoogleFonts.poppins(
                                   fontSize: 15,
@@ -74,7 +75,7 @@ class _ChatPageState extends State<ChatPage> {
                               hintText: "Search...",
                               border: OutlineInputBorder(
                                 borderSide:
-                                BorderSide(color: Colors.black, width: 4),
+                                    BorderSide(color: Colors.black, width: 4),
                                 borderRadius: BorderRadius.circular(10),
                               ),
                             ),
