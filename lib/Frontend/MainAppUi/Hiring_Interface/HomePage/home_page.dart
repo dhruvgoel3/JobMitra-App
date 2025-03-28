@@ -52,7 +52,7 @@ class _HomePageState extends State<HomePage> {
                         Name: "Ramesh",
                         Location: "Mullana",
                         Salary: "(\$12)",
-                        Image: "",
+                        Image: "assets/images/worker 1.jpg",
                         WorkDuration: "Mon-Sat",
                         rating: "4.5",
                         Experience: "(2 yrs)"),

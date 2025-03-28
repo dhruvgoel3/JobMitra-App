@@ -78,7 +78,7 @@ class CustomCards {
             Padding(
               padding: EdgeInsets.only(left: 18.0),
               child: CircleAvatar(
-                backgroundImage: AssetImage("assets/images/Google.png"),
+                backgroundImage: AssetImage("assets/images/worker 1.jpg"),
                 radius: 23,
               ),
             ),
