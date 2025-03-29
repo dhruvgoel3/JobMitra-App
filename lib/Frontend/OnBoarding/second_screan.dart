@@ -92,9 +92,14 @@ class SecondScrean extends StatelessWidget {
             height: 30,
           ),
           Image.asset("assets/images/Page Control 2.png"),
-          RoundButton(title: "GET STARTED", onTap: () {Get.to(()=>SelectUserRole());})
+          RoundButton(
+              title: "GET STARTED",
+              onTap: () {
+                Get.to(() => SelectUserRole());
+              })
         ],
       ),
     ));
   }
 }
+// Done
