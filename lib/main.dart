@@ -25,3 +25,4 @@ class MyApp extends StatelessWidget {
   }
 }
 // jobMitra
+// We are using GetX for state management and navigation
