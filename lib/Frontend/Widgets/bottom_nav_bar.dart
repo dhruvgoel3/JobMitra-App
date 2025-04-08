@@ -77,3 +77,4 @@ class _BottomNavbarState extends State<BottomNavbar> {
     );
   }
 }
+// Bottom nav bar of our app
